@@ -1,0 +1,13 @@
+services:
+  traslados-app:
+    container_name: traslados-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./backend/.env:/app/backend/.env 
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped

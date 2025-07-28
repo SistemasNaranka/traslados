@@ -13,7 +13,7 @@ logs/
 *.pid.lock
 *.pidfile
 Dockerfile.*
-docker-compose.*
+docker-compose.
 .dockerignore
 
 dist/
@@ -30,5 +30,6 @@ public/dist/
 public/build/
 
 .env.*
+!.env.example
 *.local
 coverage/
